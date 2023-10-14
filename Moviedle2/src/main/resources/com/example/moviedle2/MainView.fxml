@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" minHeight="560.0" minWidth="600.0" spacing="20.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moviedle2.Controller">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <GridPane minHeight="560.0" minWidth="600.0">
+     <columnConstraints>
+       <ColumnConstraints hgrow="SOMETIMES" minWidth="100.0" />
+       <ColumnConstraints hgrow="SOMETIMES" minWidth="100.0" />
+         <ColumnConstraints hgrow="SOMETIMES" minWidth="100.0" />
+         <ColumnConstraints hgrow="SOMETIMES" minWidth="100.0" />
+         <ColumnConstraints hgrow="SOMETIMES" minWidth="100.0" />
+         <ColumnConstraints hgrow="SOMETIMES" minWidth="100.0" />
+     </columnConstraints>
+     <rowConstraints>
+       <RowConstraints minHeight="60.0" vgrow="SOMETIMES" />
+       <RowConstraints minHeight="100.0" vgrow="SOMETIMES" />
+       <RowConstraints minHeight="80.0" vgrow="SOMETIMES" />
+         <RowConstraints minHeight="80.0" vgrow="SOMETIMES" />
+         <RowConstraints minHeight="80.0" vgrow="SOMETIMES" />
+         <RowConstraints minHeight="80.0" vgrow="SOMETIMES" />
+         <RowConstraints minHeight="80.0" vgrow="SOMETIMES" />
+     </rowConstraints>
+      <children>
+         <Button fx:id="btnGuess" minHeight="20.0" minWidth="70.0" mnemonicParsing="false" onMouseClicked="#onMouseClicked" text="Guess" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Button>
+         <Label fx:id="title" minHeight="40.0" minWidth="80.0" text="Moviedle" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+            <font>
+               <Font size="20.0" />
+            </font>
+         </Label>
+         <TextField fx:id="txtGuess" promptText="You can write without capitalization" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+         <Label fx:id="nameBox1" alignment="CENTER" minHeight="70.0" minWidth="90.0" textAlignment="CENTER" wrapText="true" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="yearBox1" alignment="CENTER" layoutX="15.0" layoutY="175.0" minHeight="70.0" minWidth="90.0" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font></Label>
+         <Label fx:id="typeBox1" alignment="CENTER" layoutX="110.0" layoutY="175.0" minHeight="70.0" minWidth="90.0" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font></Label>
+         <Label fx:id="countryBox1" alignment="CENTER" layoutX="215.0" layoutY="175.0" minHeight="70.0" minWidth="90.0" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font></Label>
+         <Label fx:id="directorBox1" alignment="CENTER" layoutX="315.0" layoutY="175.0" minHeight="70.0" minWidth="90.0" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font></Label>
+         <Label fx:id="starBox1" alignment="CENTER" layoutX="410.0" layoutY="175.0" minHeight="70.0" minWidth="90.0" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font></Label>
+         <Label fx:id="nameBox2" alignment="CENTER" minHeight="70.0" minWidth="90.0" textAlignment="CENTER" wrapText="true" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font></Label>
+         <Label fx:id="yearBox2" alignment="CENTER" layoutX="15.0" layoutY="255.0" minHeight="70.0" minWidth="90.0" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font></Label>
+         <Label fx:id="typeBox2" alignment="CENTER" layoutX="110.0" layoutY="255.0" minHeight="70.0" minWidth="90.0" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font></Label>
+         <Label fx:id="countryBox2" alignment="CENTER" layoutX="210.0" layoutY="255.0" minHeight="70.0" minWidth="90.0" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font></Label>
+         <Label fx:id="directorBox2" alignment="CENTER" layoutX="310.0" layoutY="255.0" minHeight="70.0" minWidth="90.0" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font></Label>
+         <Label fx:id="starBox2" alignment="CENTER" layoutX="410.0" layoutY="255.0" minHeight="70.0" minWidth="90.0" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font></Label>
+         <Label fx:id="nameBox3" alignment="CENTER" layoutX="15.0" layoutY="255.0" minHeight="70.0" minWidth="90.0" textAlignment="CENTER" wrapText="true" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font></Label>
+         <Label fx:id="yearBox3" alignment="CENTER" layoutX="15.0" layoutY="255.0" minHeight="70.0" minWidth="90.0" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font></Label>
+         <Label fx:id="typeBox3" alignment="CENTER" layoutX="110.0" layoutY="335.0" minHeight="70.0" minWidth="90.0" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font></Label>
+         <Label fx:id="countryBox3" alignment="CENTER" layoutX="210.0" layoutY="335.0" minHeight="70.0" minWidth="90.0" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="directorBox3" alignment="CENTER" layoutX="310.0" layoutY="335.0" minHeight="70.0" minWidth="90.0" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font></Label>
+         <Label fx:id="starBox3" alignment="CENTER" layoutX="410.0" layoutY="335.0" minHeight="70.0" minWidth="90.0" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font></Label>
+         <Label fx:id="nameBox4" alignment="CENTER" layoutX="15.0" layoutY="335.0" minHeight="70.0" minWidth="90.0" textAlignment="CENTER" wrapText="true" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font></Label>
+         <Label fx:id="yearBox4" alignment="CENTER" layoutX="10.0" layoutY="415.0" minHeight="70.0" minWidth="90.0" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font></Label>
+         <Label fx:id="typeBox4" alignment="CENTER" layoutX="15.0" layoutY="175.0" minHeight="70.0" minWidth="90.0" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font></Label>
+         <Label fx:id="countryBox4" alignment="CENTER" layoutX="15.0" layoutY="175.0" minHeight="70.0" minWidth="90.0" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font></Label>
+         <Label fx:id="directorBox4" alignment="CENTER" layoutX="210.0" layoutY="415.0" minHeight="70.0" minWidth="90.0" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font></Label>
+         <Label fx:id="starBox4" alignment="CENTER" layoutX="10.0" layoutY="415.0" minHeight="70.0" minWidth="90.0" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font></Label>
+         <Label fx:id="yearBox5" alignment="CENTER" layoutX="10.0" layoutY="495.0" minHeight="70.0" minWidth="90.0" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="6">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font></Label>
+         <Label fx:id="typeBox5" alignment="CENTER" layoutX="110.0" layoutY="495.0" minHeight="70.0" minWidth="90.0" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="6">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font></Label>
+         <Label fx:id="countryBox5" alignment="CENTER" layoutX="210.0" layoutY="495.0" minHeight="70.0" minWidth="90.0" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="6">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font></Label>
+         <Label fx:id="directorBox5" alignment="CENTER" layoutX="10.0" layoutY="495.0" minHeight="70.0" minWidth="90.0" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="6">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font></Label>
+         <Label fx:id="nameBox5" alignment="CENTER" layoutX="110.0" layoutY="495.0" minHeight="70.0" minWidth="90.0" textAlignment="CENTER" wrapText="true" GridPane.halignment="CENTER" GridPane.rowIndex="6">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font></Label>
+         <Label fx:id="starBox5" alignment="CENTER" layoutX="310.0" layoutY="495.0" minHeight="70.0" minWidth="90.0" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="6">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font></Label>
+         <Rectangle fx:id="rectName1" arcHeight="5.0" arcWidth="5.0" fill="#f2f2ee" height="70.0" opacity="0.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="90.0" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+         <Rectangle fx:id="rectYear1" arcHeight="5.0" arcWidth="5.0" fill="#f2f2ee" height="70.0" layoutX="15.0" layoutY="175.0" opacity="0.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="90.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+         <Rectangle fx:id="rectType1" arcHeight="5.0" arcWidth="5.0" fill="#f2f2ee" height="70.0" layoutX="110.0" layoutY="175.0" opacity="0.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="90.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+         <Rectangle fx:id="rectCountry1" arcHeight="5.0" arcWidth="5.0" fill="#f2f2ee" height="70.0" layoutX="210.0" layoutY="175.0" opacity="0.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="90.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+         <Rectangle fx:id="rectDirector1" arcHeight="5.0" arcWidth="5.0" fill="#f2f2ee" height="70.0" layoutX="310.0" layoutY="175.0" opacity="0.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="90.0" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+         <Rectangle fx:id="rectStar1" arcHeight="5.0" arcWidth="5.0" fill="#f2f2ee" height="70.0" layoutX="410.0" layoutY="175.0" opacity="0.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="90.0" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+         <Rectangle fx:id="rectName2" arcHeight="5.0" arcWidth="5.0" fill="#f2f2ee" height="70.0" layoutX="15.0" layoutY="175.0" opacity="0.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="90.0" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+         <Rectangle fx:id="rectYear2" arcHeight="5.0" arcWidth="5.0" fill="#f2f2ee" height="70.0" layoutX="10.0" layoutY="255.0" opacity="0.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="90.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+         <Rectangle fx:id="rectType2" arcHeight="5.0" arcWidth="5.0" fill="#f2f2ee" height="70.0" layoutX="110.0" layoutY="255.0" opacity="0.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="90.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+         <Rectangle fx:id="rectCountry2" arcHeight="5.0" arcWidth="5.0" fill="#f2f2ee" height="70.0" layoutX="210.0" layoutY="255.0" opacity="0.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="90.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+         <Rectangle fx:id="rectDirector2" arcHeight="5.0" arcWidth="5.0" fill="#f2f2ee" height="70.0" layoutX="310.0" layoutY="255.0" opacity="0.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="90.0" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+         <Rectangle fx:id="rectStar2" arcHeight="5.0" arcWidth="5.0" fill="#f2f2ee" height="70.0" layoutX="410.0" layoutY="255.0" opacity="0.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="90.0" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+         <Rectangle fx:id="rectName3" arcHeight="5.0" arcWidth="5.0" fill="#f2f2ee" height="70.0" layoutX="15.0" layoutY="175.0" opacity="0.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="90.0" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+         <Rectangle fx:id="rectYear3" arcHeight="5.0" arcWidth="5.0" fill="#f2f2ee" height="70.0" layoutX="10.0" layoutY="335.0" opacity="0.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="90.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+         <Rectangle fx:id="rectType3" arcHeight="5.0" arcWidth="5.0" fill="#f2f2ee" height="70.0" layoutX="110.0" layoutY="335.0" opacity="0.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="90.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+         <Rectangle fx:id="rectCountry3" arcHeight="5.0" arcWidth="5.0" fill="#f2f2ee" height="70.0" layoutX="210.0" layoutY="335.0" opacity="0.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="90.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+         <Rectangle fx:id="rectDirector3" arcHeight="5.0" arcWidth="5.0" fill="#f2f2ee" height="70.0" layoutX="310.0" layoutY="335.0" opacity="0.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="90.0" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+         <Rectangle fx:id="rectStar3" arcHeight="5.0" arcWidth="5.0" fill="#f2f2ee" height="70.0" layoutX="410.0" layoutY="335.0" opacity="0.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="90.0" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+         <Rectangle fx:id="rectName4" arcHeight="5.0" arcWidth="5.0" fill="#f2f2ee" height="70.0" layoutX="15.0" layoutY="335.0" opacity="0.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="90.0" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+         <Rectangle fx:id="rectName5" arcHeight="5.0" arcWidth="5.0" fill="#f2f2ee" height="70.0" layoutX="10.0" layoutY="415.0" opacity="0.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="90.0" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+         <Rectangle fx:id="rectYear4" arcHeight="5.0" arcWidth="5.0" fill="#f2f2ee" height="70.0" opacity="0.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="90.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+         <Rectangle fx:id="rectType4" arcHeight="5.0" arcWidth="5.0" fill="#f2f2ee" height="70.0" opacity="0.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="90.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+         <Rectangle fx:id="rectCountry4" arcHeight="5.0" arcWidth="5.0" fill="#f2f2ee" height="70.0" opacity="0.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="90.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+         <Rectangle fx:id="rectDirector4" arcHeight="5.0" arcWidth="5.0" fill="#f2f2ee" height="70.0" opacity="0.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="90.0" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+         <Rectangle fx:id="rectStar4" arcHeight="5.0" arcWidth="5.0" fill="#f2f2ee" height="70.0" opacity="0.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="90.0" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+         <Rectangle fx:id="rectYear5" arcHeight="5.0" arcWidth="5.0" fill="#f2f2ee" height="70.0" opacity="0.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="90.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+         <Rectangle fx:id="rectType5" arcHeight="5.0" arcWidth="5.0" fill="#f2f2ee" height="70.0" opacity="0.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="90.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+         <Rectangle fx:id="rectCountry5" arcHeight="5.0" arcWidth="5.0" fill="#f2f2ee" height="70.0" opacity="0.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="90.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+         <Rectangle fx:id="rectDirector5" arcHeight="5.0" arcWidth="5.0" fill="#f2f2ee" height="70.0" opacity="0.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="90.0" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+         <Rectangle fx:id="rectStar5" arcHeight="5.0" arcWidth="5.0" fill="#f2f2ee" height="70.0" opacity="0.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="90.0" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+      </children>
+   </GridPane>
+</VBox>
